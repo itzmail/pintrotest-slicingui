@@ -1,0 +1,203 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+    font-size: 24px;
+    text-align: center;
+}
+
+.content {
+    font-size: 16px;
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: red;
+}
+
+.ic-wavehand {
+    width: 30px;
+    height: auto;
+}
+
+.ic-icon {
+    width: 40px;
+    height: auto;
+}
+
+.box-jadwal-seleksi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #1B50D8;
+    margin-top: 20px;
+    border-radius: 1.2em;
+}
+
+.card-outline {
+    border-radius: 20px; 
+    padding: 15px;
+}
+
+.card-outline-document {
+    border-radius: 20px; 
+}
+
+.card-upload {
+    background-color: #F6F8FF;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.stepper-container {
+    max-width: 600px;
+    padding: 20px;
+    background: white;
+    border-radius:20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.stepper-wrapper {
+    position: relative;
+}
+
+.stepper-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 0;
+    position: relative;
+}
+
+.stepper-item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    bottom: 0;
+    width: 2px;
+    background: #e9ecef;
+    z-index: 1;
+}
+
+.stepper-item.completed:not(:last-child)::before {
+    background: #0055FF;
+}
+
+.stepper-circle-wrapper {
+    position: relative;
+    margin-right: 15px;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.stepper-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+}
+
+.stepper-circle.active {
+    background: #0055FF;
+    color: white;
+}
+
+.stepper-circle.completed {
+    background: #0055FF;
+    color: white;
+}
+
+/* Outline effect for active step */
+.stepper-circle-wrapper.active::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border: 2px solid #0055FF;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.stepper-content {
+    flex-grow: 1;
+}
+
+.stepper-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #212529;
+}
+
+.stepper-item.completed .stepper-title {
+    color: #0055FF;
+    font-weight: 600;
+}
+
+.stepper-item.active .stepper-title {
+    color: #0055FF;
+    font-weight: 600;
+}
+
+.stepper-item.disabled .stepper-title {
+    color: #6c757d;
+    font-weight: 400;
+}
+
+.text-description {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #6c757d;
+}
