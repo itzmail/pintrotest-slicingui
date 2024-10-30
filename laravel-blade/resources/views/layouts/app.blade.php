@@ -11,8 +11,8 @@
     
     <title>Registrasi</title>
 </head>
-<body class="p-3">
-    <div class="container d-flex flex-row align-items-center sticky-top bg-white py-2">
+<body class="p-3 ">
+    <div class="container-fluid d-flex flex-row align-items-center sticky-top bg-white py-2">
         @if(View::hasSection('can-go-back') && View::getSection('can-go-back'))
             <a href="@yield('back-url', '#')" class="@yield('icon-nav', 'fas fa-arrow-left fa-lg') text-decoration-none text-reset"></a>
         @else

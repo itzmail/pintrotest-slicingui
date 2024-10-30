@@ -6,14 +6,14 @@
 <div class="container">
     <div class="mt-4 d-flex flex-row align-items-center">
         <h2 class="fw-bold">Hallo, firdaus</h2>
-        <img src="{{ asset('image/waving-hand-svgrepo-com.svg') }}" alt="Waving Hand" class="ic-wavehand ms-2">
+        <img src="{{ asset('image/waving-hand.png') }}" alt="Waving Hand" class="ic-wavehand ms-2">
     </div>
     <div class="mt-4">
         <p>
             Kamu telah menyelesaikan pembayaran Uang Formulir, silahkan Lengkapi data dan ikuti Test/Observasi sesuai jadwal.
         </p>
         <a href="#" class="box-jadwal-seleksi text-decoration-none">
-            <img src="{{ asset('image/goals-goal-svgrepo-com.svg') }}" alt="Step 1" class="ic-icon">
+            <img src="{{ asset('image/mission.png') }}" alt="Step 1" class="ic-icon">
             <div class="d-flex flex-column flex-grow-1 ms-3 text-white">
                 <i class="fs-4 fw-bold">Jadwal ujian seleksi</i>
                 <i class="">Klik di sini untuk melihat jadwal</i>
@@ -41,7 +41,7 @@
         </a>
     </div>
     
-    <div class="stepper-container mt-4">
+    <div class="d-flex stepper-container mt-4">
         <div class="stepper-wrapper">
             <!-- Step 1 -->
             <div class="stepper-item completed">
@@ -96,7 +96,7 @@
                         <span style="width: auto; height: auto; background: #a9b3bc; border-radius: 50%;"></span>
                     </div>
                 </div>
-                <div class="stepper-content">
+                <div class="stepper-content last">
                     <h4 class="stepper-title">Proses Pembayaran Uang Pangkal</h4>
                 </div>
             </div>

@@ -18,6 +18,12 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+body {
+    width: 100%;
+    /* max-width: 480px; */
+    margin: 0 auto;
+    padding: 10px;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -60,7 +66,7 @@ table {
 }
 
 .ic-wavehand {
-    width: 30px;
+    width: 40px;
     height: auto;
 }
 
@@ -95,7 +101,6 @@ table {
 }
 
 .stepper-container {
-    max-width: 600px;
     padding: 20px;
     background: white;
     border-radius:20px;
@@ -171,7 +176,15 @@ table {
 }
 
 .stepper-content {
+    padding-block: 0px 20px;
     flex-grow: 1;
+    border-bottom: 1px solid rgb(188, 188, 188);
+}
+
+.stepper-content.last {
+    padding-block: 0px 20px;
+    flex-grow: 1;
+    border-bottom: 0px;
 }
 
 .stepper-title {
