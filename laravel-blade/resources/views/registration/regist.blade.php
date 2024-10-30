@@ -15,7 +15,7 @@
         <a href="#" class="box-jadwal-seleksi text-decoration-none">
             <img src="{{ asset('image/mission.png') }}" alt="Step 1" class="ic-icon">
             <div class="d-flex flex-column flex-grow-1 ms-3 text-white">
-                <i class="fs-4 fw-bold">Jadwal ujian seleksi</i>
+                <i class="fs-5 fw-bold">Jadwal ujian seleksi</i>
                 <i class="">Klik di sini untuk melihat jadwal</i>
             </div>
             <i class="fa-solid fa-circle-arrow-right fa-2x text-white ms-3 text-decoration-none"></i>

@@ -14,9 +14,9 @@ use App\Http\Controllers\RegistrasiController;
 |
 */
 
-/* Route::get('/', function () {
-    return view('welcome');
-}); */
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/', [RegistrasiController::class, 'index']);
 Route::get('/registration/document', [RegistrasiController::class, 'document']);
